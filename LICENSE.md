@@ -1,6 +1,6 @@
-# MIT License
+MIT License
 
-Copyright (c) 2023 Metaphor-Driven Music Therapy App Developers
+Copyright (c) 2023 Udayan Sethuramalingam
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
