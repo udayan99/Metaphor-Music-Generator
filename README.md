@@ -1,66 +1,42 @@
-# Metaphor-Driven Music Therapy App
+# Metaphor-Music-Generator
 
-Welcome to the Metaphor-Driven Music Therapy App! This application combines the power of music and language processing to provide therapeutic music recommendations based on users’ emotional states or situations, using metaphor analysis.
+Generate music compositions based on mood derived from textual input, leveraging OpenAI and Metaphor APIs.
 
 ## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Setup and Installation](#setup-and-installation)
+- [Setup](#setup)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
-## Overview
+## Setup
 
-This application allows users to input their emotions or situations and receive a personalized playlist based on metaphorical themes in song lyrics. The app uses a dedicated Metaphor API to extract metaphors from the song lyrics and match them to user input, creating a unique and personalized music therapy experience.
-
-## Features
-
-- **User Profile Management:** Users can create profiles to record their preferences, feedback, and interaction history.
-- **Metaphor Analysis:** Utilizes the Metaphor API to analyze and extract metaphorical themes from song lyrics.
-- **Matching Algorithm:** Matches user input with metaphorical themes to generate personalized playlists.
-- **Interactive UI/UX:** Offers a user-friendly interface with smooth navigation and intuitive controls.
-- **Feedback Processing:** Uses user feedback to refine the algorithm and improve recommendations.
-- **Data Visualization:** Displays insights into the metaphorical content of recommended songs.
-
-## Setup and Installation
-
-1. **Clone the Repository**
-    ```sh
-    git clone <repository_url>
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/Metaphor-Music-Generator.git
+    cd Metaphor-Music-Generator
     ```
-2. **Navigate to the Project Directory**
-    ```sh
-    cd <project_directory>
+
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
     ```
-3. **Install Dependencies**
-    ```sh
-    pip install -r requirements.txt  # Python Dependencies
-    npm install  # JavaScript/Node.js Dependencies
-    ```
-4. **Initialize Database**
-    ```sh
-    python manage.py migrate  # Initializes the database
+
+3. Set up your API keys:
+    ```bash
+    export OPENAI_API_KEY='your-openai-api-key'
+    export METAPHOR_API_KEY='your-metaphor-api-key'
     ```
 
 ## Usage
 
-1. **Start the Backend Server**
-    ```sh
-    python manage.py runserver  # Starts the Django/Flask server
+- Generate music without Metaphor API:
+    ```bash
+    python src/without_metaphor.py
     ```
-2. **Start the Frontend Development Server**
-    ```sh
-    npm start  # Starts the React/Vue.js development server
+
+- Generate music with Metaphor API:
+    ```bash
+    python src/with_metaphor.py
     ```
-3. **Access the App**
-   - Open a web browser and navigate to [http://localhost:3000](http://localhost:3000) or the port you've configured.
-
-## Contributing
-
-For details on contributing to this project, please check the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## License
-
-This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
